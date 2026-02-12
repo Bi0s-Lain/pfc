@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>PFC 98</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+
+    <style>
+        body {
+            background-color: #008080;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button img { pointer-events: none; }
+    </style>
+</head>
+<body>
+
+    <div class="window" style="width: 450px;">
+        
+        <div class="title-bar">
+            <div class="title-bar-text">PFC_Game.exe</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+
+        <div class="window-body">
+            
+            <div style="text-align: center; margin-bottom: 20px; font-size: 14px;">
+                <p id="message">Connexion au serveur...</p>
+            </div>
+
+            <fieldset>
+                <legend>Commandes de jeu</legend>
+                
+                <div class="field-row" style="justify-content: center; gap: 10px;">
+                    <button id="rock" style="height: auto; padding: 10px;">
+                        <img src="./images/rock.png" alt="Pierre" width="48" height="48">
+                        <br>Pierre
+                    </button>
+
+                    <button id="paper" style="height: auto; padding: 10px;">
+                        <img src="./images/paper.png" alt="Feuille" width="48" height="48">
+                        <br>Feuille
+                    </button>
+
+                    <button id="scissors" style="height: auto; padding: 10px;">
+                        <img src="./images/sisor.png" alt="Ciseaux" width="48" height="48">
+                        <br>Ciseaux
+                    </button>
+                </div>
+            </fieldset>
+
+            <div class="field-row" style="justify-content: center; margin-top: 15px;">
+                <button id="replay" style="display:none; min-width: 100px;">
+                    Rejouer une partie
+                </button>
+            </div>
+
+        </div>
+
+        <div class="status-bar">
+            <p class="status-bar-field">Socket.IO: Actif</p>
+            <p class="status-bar-field">Port: 8080</p>
+            <p class="status-bar-field" style="width: 20px; text-align: center;"><a href="/">Quit</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À propos</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    
+    <style>
+        body {
+            background-color: #008080;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .about-content {
+            display: flex;
+            gap: 20px;
+            padding: 10px;
+            align-items: flex-start;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="window" style="width: 400px;">
+        <div class="title-bar">
+            <div class="title-bar-text">À propos de PFC</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+
+        <div class="window-body">
+            
+            <div class="about-content">
+                <div>
+                    <img src="./images/screen.png" alt="Logo PFC" width="64" height="64">
+                </div>
+                
+                <div>
+                    <h4 style="margin-top: 0; margin-bottom: 5px;">Pierre Feuille Ciseaux</h4>
+                    <p style="margin-top:0;">Version 6.7 (Build 2024)</p>
+                    <hr>
+                    <p>Développé par :<br>
+                    <strong>CLAEYS--MADAU Nino</strong><br>
+                    L3 Informatique</p>
+                    
+                    <p><i>Propulsé par Socket.io & Webpack.</i></p>
+                </div>
+            </div>
+
+            <div class="field-row" style="justify-content: flex-end; margin-top: 20px;">
+                <a href="/" style="text-decoration: none;">
+                    <button style="width: 80px;">OK</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
